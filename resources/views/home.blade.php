@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
 
@@ -34,7 +35,6 @@
 
 
        
-
 
         /* ===============================
    SCROLL REVEAL ANIMATION
@@ -230,48 +230,44 @@
 
 
 
-    <!-- ===============================
-         NAVBAR
-    =============================== -->
-
+    
     <header
         class="fixed top-0 left-0 w-full z-50 bg-[#1c1c1c]/95 backdrop-blur-md border-b border-white/10"
     >
 
-        <!-- FULL WIDTH NAVBAR -->
+        <div class="w-full px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
 
-        <div class="w-full px-6 md:px-10 lg:px-16 xl:px-24">
-
-            <div class="h-20 flex items-center justify-between">
+            <div class="h-16 sm:h-20 flex items-center justify-between">
 
 
                 <!-- LOGO -->
-            <a href="#home" class="flex items-center gap-3 group">
+                <a href="#home" class="flex items-center gap-3">
 
-                <img
-                    src="{{ asset('images/komaki.png') }}"
-                    alt="KŌMAKI Logo"
-                    class="w-12 h-12 object-contain"
-                >
+                    <img
+                        src="{{ asset('images/komaki.png') }}"
+                        alt="KŌMAKI Logo"
+                        class="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                    >
 
-                <div>
-                    <h1 class="serif text-2xl tracking-[0.18em] leading-none">
-                        KŌMAKI
-                    </h1>
+                    <div>
 
-                    <p class="text-[9px] tracking-[0.35em] text-red-400 mt-1">
-                        小牧
-                    </p>
-                </div>
+                        <h1 class="serif text-lg sm:text-2xl tracking-[0.18em]">
+                            KŌMAKI
+                        </h1>
 
-            </a>
+                        <p class="text-[8px] sm:text-[9px] tracking-[0.35em] text-red-400 mt-1">
+                            小牧
+                        </p>
+
+                    </div>
+
+                </a>
 
 
-
-                <!-- NAVIGATION -->
+                <!-- DESKTOP NAVIGATION -->
 
                 <nav
-                    class="hidden md:flex items-center gap-6 lg:gap-10 text-sm text-gray-300"
+                    class="hidden lg:flex items-center gap-6 xl:gap-10 text-sm text-gray-300"
                 >
 
                     <a
@@ -281,14 +277,12 @@
                         Home
                     </a>
 
-
                     <a
                         href="#about"
                         class="hover:text-red-400 transition duration-300"
                     >
                         About
                     </a>
-
 
                     <a
                         href="#menu"
@@ -297,14 +291,12 @@
                         Menu
                     </a>
 
-
                     <a
                         href="#gallery"
                         class="hover:text-red-400 transition duration-300"
                     >
                         Gallery
                     </a>
-
 
                     <a
                         href="#journal"
@@ -316,16 +308,82 @@
                 </nav>
 
 
-
-                <!-- BUTTON -->
+                <!-- DESKTOP BUTTON -->
 
                 <a
                     href="#menu"
-                    class="hidden md:inline-flex bg-red-600 hover:bg-red-700 transition duration-300 px-6 py-3 rounded-full text-sm font-medium shadow-lg shadow-red-900/20"
+                    class="hidden lg:inline-flex bg-red-600 hover:bg-red-700 transition duration-300 px-6 py-3 rounded-full text-sm font-medium shadow-lg shadow-red-900/20"
                 >
                     Explore Menu
                 </a>
 
+
+                <!-- MOBILE MENU BUTTON -->
+
+                <button
+                    id="mobile-menu-button"
+                    class="lg:hidden w-10 h-10 flex items-center justify-center border border-white/10 rounded-lg text-xl hover:border-red-400 hover:text-red-400 transition"
+                    aria-label="Open navigation menu"
+                >
+                    ☰
+                </button>
+
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <div
+                id="mobile-menu"
+                class="hidden lg:hidden pb-5 border-t border-white/10"
+            >
+
+                <nav class="flex flex-col pt-4 gap-1">
+
+                    <a
+                        href="#home"
+                        class="mobile-link px-4 py-3 rounded-lg text-gray-300 hover:bg-white/5 hover:text-red-400 transition"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="#about"
+                        class="mobile-link px-4 py-3 rounded-lg text-gray-300 hover:bg-white/5 hover:text-red-400 transition"
+                    >
+                        About
+                    </a>
+
+                    <a
+                        href="#menu"
+                        class="mobile-link px-4 py-3 rounded-lg text-gray-300 hover:bg-white/5 hover:text-red-400 transition"
+                    >
+                        Menu
+                    </a>
+
+                    <a
+                        href="#gallery"
+                        class="mobile-link px-4 py-3 rounded-lg text-gray-300 hover:bg-white/5 hover:text-red-400 transition"
+                    >
+                        Gallery
+                    </a>
+
+                    <a
+                        href="#journal"
+                        class="mobile-link px-4 py-3 rounded-lg text-gray-300 hover:bg-white/5 hover:text-red-400 transition"
+                    >
+                        Journal
+                    </a>
+
+                    <a
+                        href="#menu"
+                        class="mobile-link mt-3 bg-red-600 hover:bg-red-700 transition text-center px-6 py-3 rounded-full text-sm font-medium"
+                    >
+                        Explore Menu
+                    </a>
+
+                </nav>
 
             </div>
 
@@ -1419,40 +1477,83 @@
 
     <script>
 
-        const revealElements = document.querySelectorAll(
-            '.reveal, .reveal-left, .reveal-right'
-        );
+    /* ===============================
+       MOBILE MENU
+    =============================== */
+
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+    const mobileMenu = document.getElementById('mobile-menu');
 
 
-        const revealOnScroll = new IntersectionObserver(
-            (entries) => {
+    if (mobileMenuButton && mobileMenu) {
 
-                entries.forEach((entry) => {
+        mobileMenuButton.addEventListener('click', () => {
 
-                    if (entry.isIntersecting) {
-
-                        entry.target.classList.add('active');
-
-                    }
-
-                });
-
-            },
-
-            {
-                threshold: 0.15
-            }
-
-        );
-
-
-        revealElements.forEach((element) => {
-
-            revealOnScroll.observe(element);
+            mobileMenu.classList.toggle('hidden');
 
         });
 
-    </script>
+    }
+
+
+    /* CLOSE MOBILE MENU WHEN LINK IS CLICKED */
+
+    document.querySelectorAll('.mobile-link').forEach((link) => {
+
+        link.addEventListener('click', () => {
+
+            if (mobileMenu) {
+
+                mobileMenu.classList.add('hidden');
+
+            }
+
+        });
+
+    });
+
+
+
+    /* ===============================
+       SCROLL REVEAL
+    =============================== */
+
+    const revealElements = document.querySelectorAll(
+        '.reveal, .reveal-left, .reveal-right, .reveal-scale'
+    );
+
+
+    const revealOnScroll = new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add('active');
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.15
+        }
+
+    );
+
+
+    revealElements.forEach((element) => {
+
+        revealOnScroll.observe(element);
+
+    });
+
+</script>
 
 
 </body>
