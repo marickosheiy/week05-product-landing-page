@@ -1,16 +1,14 @@
 # KŌMAKI 🍣
 
-## Week 05 – Responsive Product Landing Page
-
----
+## Week 05 – Product Landing Page
 
 # 1. Project Title
 
-# KŌMAKI – Japanese Dining Product Landing Page
+## KŌMAKI – Japanese Restaurant Product Landing Page
 
-KŌMAKI is a modern and responsive Japanese restaurant product landing page developed as part of the Week 05 Product Landing Page activity.
+KŌMAKI is a modern Japanese-inspired product landing page developed for the Week 05 Product Landing Page activity. The website presents the brand and its featured Japanese food products through an elegant, visually engaging, and responsive user interface.
 
-The website presents a Japanese-inspired restaurant experience through an elegant interface, food imagery, featured menu items, and interactive sections. The design focuses on creating a visually appealing and responsive experience across desktop, tablet, and mobile devices.
+The project focuses on creating a professional landing page that provides a consistent experience across desktop, tablet, and mobile devices.
 
 ---
 
@@ -18,71 +16,76 @@ The website presents a Japanese-inspired restaurant experience through an elegan
 
 ## What is a Product Landing Page?
 
-A product landing page is a dedicated web page designed to introduce and promote a specific product, service, business, or brand.
+A Product Landing Page is a dedicated web page designed to introduce and present a product, service, brand, or business to potential users or customers.
 
-Landing pages are designed to immediately communicate important information to visitors. They usually contain a clear visual hierarchy, engaging images, descriptions, call-to-action buttons, and important business information.
+It usually focuses on presenting important information in a clear and visually engaging way. A landing page commonly includes a navigation bar, hero section, product or feature sections, call-to-action buttons, and other information that encourages users to explore the website.
 
-For this project, the landing page introduces the fictional Japanese dining brand **KŌMAKI**.
+For this project, the landing page was designed to introduce **KŌMAKI**, a Japanese-inspired food brand that offers different varieties of maki.
 
 ## Why Are Landing Pages Important for Businesses?
 
-Landing pages are important because they help businesses:
+Landing pages are important because they help businesses communicate their products and brand identity effectively. A well-designed landing page can create a strong first impression and guide visitors toward important information or actions.
 
-- Introduce their products or services clearly.
-- Create a strong first impression.
-- Communicate brand identity.
-- Highlight important features or offerings.
-- Encourage users to explore more content.
+Landing pages help businesses:
+
+- Introduce products and services clearly.
+- Establish a strong brand identity.
+- Create a positive first impression.
+- Highlight important products or features.
 - Improve user engagement.
 - Provide clear calls to action.
+- Present information in an organized and visually appealing way.
 
-A well-designed landing page can help visitors quickly understand what a business offers and guide them toward the next action.
+A responsive and well-designed landing page also allows businesses to reach users across different devices.
 
 ## Purpose of the Project
 
-The purpose of this project is to apply modern web development and user interface design principles in creating a responsive product landing page.
+The purpose of this project is to apply modern web development and user interface design principles in creating a responsive Product Landing Page.
 
-The project focuses on:
+The project focuses on the practical use of:
 
 - Responsive Web Design
 - Tailwind CSS
 - Laravel Blade templates
-- User Interface Design
-- Modern layout techniques
-- Mobile-friendly navigation
+- Modern user interface design
+- Responsive navigation
+- Flexbox and CSS Grid
+- Mobile-friendly layouts
 - Visual hierarchy
-- Responsive images and content
+- Consistent spacing and typography
 
-The goal is to create a polished landing page that provides a consistent experience across different devices.
+The goal is to create an elegant and responsive landing page that effectively presents the KŌMAKI brand and its featured food products.
 
 ---
 
 # 3. Objectives
 
-The following learning objectives were accomplished during this activity:
+The following learning objectives were accomplished during the activity:
 
-- Create a modern Product Landing Page.
+- Create a modern and visually engaging Product Landing Page.
 - Apply Responsive Web Design principles.
+- Develop layouts for desktop, tablet, and mobile devices.
 - Use Tailwind CSS for styling.
+- Apply utility-first CSS principles.
 - Use responsive utility classes.
-- Implement Flexbox layouts.
-- Implement CSS Grid layouts.
-- Create responsive navigation.
-- Improve user experience across different devices.
-- Apply consistent typography and spacing.
-- Use a limited and harmonious color palette.
-- Create reusable and maintainable UI structures.
-- Organize project files properly.
-- Use Laravel Blade templates.
-- Document the project using GitHub and README documentation.
+- Implement Flexbox for responsive layouts.
+- Implement CSS Grid for organizing content.
+- Create a responsive navigation bar.
+- Improve the usability of the website across different screen sizes.
+- Apply consistent spacing and typography.
+- Use a harmonious and limited color palette.
+- Improve visual hierarchy through layout and typography.
+- Use Laravel Blade for structuring the interface.
+- Understand the importance of reusable and modular user interface development.
+- Organize the project and document its development process using GitHub.
 
 ---
 
 # 4. Responsive Web Design
 
-Responsive Web Design allows a website to adapt its layout and content according to the screen size of the device being used.
+Responsive Web Design is an approach to web development that allows a website to adapt its layout, content, and interface according to the screen size and device being used.
 
-The KŌMAKI landing page was designed to provide a usable experience across:
+The KŌMAKI Product Landing Page was designed to provide a consistent user experience across different devices, including:
 
 - Desktop computers
 - Laptops
@@ -91,36 +94,40 @@ The KŌMAKI landing page was designed to provide a usable experience across:
 
 ## Mobile-First Design
 
-Mobile-first design means designing for smaller screens first before adding enhancements for larger devices.
+Mobile-first design is an approach where the interface is first designed for smaller screens before enhancements are applied to larger screens.
 
-This approach is important because mobile devices have limited screen space. Content must remain readable, accessible, and easy to navigate.
+This approach is important because mobile devices have limited screen space. Content must remain readable, organized, and easy to navigate.
 
-Tailwind CSS makes this approach easier by allowing styles to be applied by default for mobile devices and modified for larger screens.
+Tailwind CSS supports a mobile-first workflow by applying default utility classes to smaller screens and using breakpoint prefixes for larger screens.
 
-Example:
+For example:
 
 ```html
 <div class="flex flex-col md:flex-row">
 ```
 
-On mobile devices, the content is displayed vertically.
+In this example:
 
-On medium-sized screens and larger, the layout changes to a horizontal row.
+- `flex-col` displays the content vertically on smaller screens.
+- `md:flex-row` changes the layout to a horizontal row on medium-sized screens and larger.
 
----
+This allows the layout to adapt naturally to different devices.
 
 ## Responsive Breakpoints
 
-Tailwind CSS provides responsive breakpoints that allow layouts to change depending on screen size.
+Responsive breakpoints allow the interface to change according to screen size.
 
-Examples include:
+Tailwind CSS provides breakpoint prefixes such as:
 
 ```text
 sm:
 md:
 lg:
 xl:
+2xl:
 ```
+
+These prefixes can be used to modify elements for larger screens.
 
 Example:
 
@@ -130,44 +137,39 @@ Example:
 </h1>
 ```
 
-This allows the heading to become larger on larger screens while remaining readable on smaller devices.
+The heading uses a smaller font size on mobile devices and becomes larger on tablets and desktop screens.
 
----
+Responsive breakpoints help maintain readability and proper visual hierarchy across different devices.
 
 ## Flexbox
 
-Flexbox is used to arrange elements in rows or columns.
+Flexbox is a CSS layout system used to arrange elements in rows or columns.
 
 It is useful for:
 
 - Navigation bars
-- Hero content
+- Hero sections
 - Buttons
-- Logo alignment
-- Content sections
+- Content alignment
+- Product layouts
 
 Example:
 
 ```html
-<div class="flex flex-col lg:flex-row">
+<div class="flex flex-col lg:flex-row items-center">
 ```
 
-On smaller screens, elements appear vertically.
+On smaller screens, the content is arranged vertically.
 
-On larger screens, elements are displayed horizontally.
+On larger screens, the layout changes to a horizontal arrangement.
 
----
+Flexbox helps create flexible and responsive layouts with proper alignment and spacing.
 
 ## CSS Grid
 
-CSS Grid is useful for displaying multiple items in an organized layout.
+CSS Grid is used to organize multiple elements into rows and columns.
 
-It is commonly used for:
-
-- Menu items
-- Food cards
-- Gallery sections
-- Content cards
+It is useful for sections containing multiple cards or products.
 
 Example:
 
@@ -175,28 +177,31 @@ Example:
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 ```
 
-The layout changes from:
+This layout provides:
 
-- 1 column on mobile
-- 2 columns on medium screens
-- 3 columns on large screens
+- One column on mobile devices.
+- Two columns on medium-sized screens.
+- Three columns on large screens.
 
----
+CSS Grid helps organize content while maintaining a clean and responsive structure.
 
 ## User Experience (UX)
 
-Responsive design improves User Experience because users can access the website comfortably regardless of the device they use.
+Responsive design plays an important role in improving User Experience.
 
-Responsive design helps ensure:
+Users access websites using different devices and screen sizes. A website that only works properly on a desktop may become difficult to use on a phone or tablet.
+
+Responsive design helps ensure that:
 
 - Text remains readable.
-- Images remain visible.
+- Images fit properly within the screen.
 - Navigation remains accessible.
-- Buttons are easier to tap.
-- Content does not overflow the screen.
+- Buttons are easy to interact with.
+- Content does not overflow.
 - Layouts remain organized.
+- Important information remains visible.
 
-Responsive design is important in modern web applications because users access websites from many different screen sizes.
+Responsive design is important in modern web applications because it allows users to have a consistent and accessible experience regardless of the device they use.
 
 ---
 
@@ -204,9 +209,9 @@ Responsive design is important in modern web applications because users access w
 
 ## Utility-First CSS
 
-Tailwind CSS uses a utility-first approach.
+Tailwind CSS follows a utility-first approach to styling.
 
-Instead of creating a large number of custom CSS classes, styles are applied directly using utility classes.
+Instead of creating many custom CSS classes, styling is applied by combining utility classes directly in HTML or Blade templates.
 
 Example:
 
@@ -216,69 +221,83 @@ Example:
 </button>
 ```
 
-The classes control:
+The utility classes define:
 
 - Background color
 - Text color
-- Padding
+- Horizontal padding
+- Vertical padding
 - Border radius
 - Hover effects
 - Transitions
 
----
+This approach makes it easier to create consistent designs without writing large amounts of custom CSS.
 
 ## Advantages of Tailwind CSS
 
-Tailwind CSS provides several advantages:
+Tailwind CSS provides several advantages during development.
 
-- Faster UI development.
-- Consistent spacing.
+These include:
+
+- Faster interface development.
+- Consistent spacing values.
 - Responsive utility classes.
-- Easy customization.
-- Reduced need for custom CSS.
-- Consistent design system.
-- Easy maintenance.
+- Easy layout customization.
+- Reduced need for large custom CSS files.
+- Consistent design patterns.
+- Easy implementation of hover and transition effects.
 
----
+Tailwind also allows developers to work directly with responsive layouts using utility classes.
 
 ## Responsive Utility Classes
 
-Tailwind uses breakpoint prefixes to modify layouts based on screen size.
+Tailwind CSS provides responsive prefixes that allow styles to change depending on screen size.
 
 Example:
 
 ```html
-<div class="px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
+<div class="px-4 sm:px-6 md:px-10 lg:px-16">
 ```
 
-This allows the horizontal spacing to increase as the screen becomes larger.
+This adjusts the horizontal padding as the screen becomes larger.
 
-Another example:
+Another example is:
 
 ```html
 <nav class="hidden lg:flex">
 ```
 
-The navigation is hidden on smaller devices and displayed on larger screens.
+In this example:
 
----
+- The navigation is hidden on smaller screens.
+- The navigation becomes a flex container on large screens.
+
+This is useful when creating separate desktop and mobile navigation experiences.
 
 ## Component Styling
 
-Tailwind classes are combined to create reusable visual styles.
+Tailwind utility classes can be combined to create consistent component styles.
 
-Example:
+For example, a call-to-action button can use:
 
 ```html
-<a
-    href="#menu"
-    class="bg-red-600 hover:bg-red-700 transition duration-300 px-6 py-3 rounded-full text-sm font-medium"
->
+<a href="#menu"
+   class="bg-red-600 text-white px-6 py-3 rounded-full
+          hover:bg-red-700 transition duration-300">
     Explore Menu
 </a>
 ```
 
-This creates a consistent call-to-action button style used throughout the interface.
+This creates a button with:
+
+- A red background.
+- White text.
+- Consistent padding.
+- Rounded corners.
+- A hover effect.
+- A smooth transition.
+
+Using similar utility combinations throughout the project helps maintain visual consistency.
 
 ---
 
@@ -286,191 +305,218 @@ This creates a consistent call-to-action button style used throughout the interf
 
 ## What Are Blade Components?
 
-Blade Components are reusable interface elements created using Laravel's Blade templating system.
+Blade Components are reusable user interface elements created using Laravel's Blade templating system.
 
-They allow developers to reuse UI elements instead of repeating the same code throughout multiple pages.
+Instead of writing the same HTML structure repeatedly, a developer can create a reusable component and use it in different parts of the application.
 
-Examples of possible reusable components include:
+Examples of reusable components may include:
 
 - Navigation bars
+- Hero sections
 - Buttons
-- Cards
+- Product cards
+- Feature cards
+- Testimonials
 - Footers
-- Section headings
 
-Example Blade component usage:
+A Blade component can be used using syntax such as:
 
 ```blade
-<x-button>
-    Explore Menu
-</x-button>
+<x-navbar />
 ```
 
----
+or:
+
+```blade
+<x-footer />
+```
+
+Blade Components help organize the interface into smaller and more manageable parts.
 
 ## Why Reusable Components Improve Maintainability
 
-Reusable components reduce duplicated code.
+Reusable components improve maintainability because common elements are stored in one location.
 
-Instead of editing the same navigation bar in multiple pages, the navigation can be stored in one component.
+For example, instead of repeating the same navigation bar code on multiple pages, the navigation can be created once as a component.
 
-Benefits include:
+If changes are needed, the developer only needs to update the component once.
 
-- Easier maintenance
-- Less duplicated code
-- Consistent design
-- Faster development
-- Easier updates
+This provides several advantages:
 
----
+- Less duplicated code.
+- Easier maintenance.
+- Faster development.
+- More consistent user interfaces.
+- Easier debugging.
+- Easier future updates.
 
 ## Benefits of Modular UI Development
 
-Modular UI development divides the interface into smaller reusable parts.
+Modular UI development divides a large interface into smaller and reusable sections.
 
 For example:
 
 ```text
 components/
 ├── navbar.blade.php
-├── button.blade.php
-├── menu-card.blade.php
+├── hero.blade.php
+├── feature-card.blade.php
+├── product-card.blade.php
 └── footer.blade.php
 ```
 
-This structure makes the project easier to understand and maintain.
+This approach makes the project easier to understand because each component has a specific responsibility.
 
-> Note: Screenshots of the Blade Components folder should reflect the actual structure implemented in the project.
-
----
+It also improves scalability because new pages can reuse existing components.
 
 ## Sample Blade Code
 
-Example of reusable layout structure:
+A reusable Blade component may look like this:
 
 ```blade
-<!DOCTYPE html>
-<html lang="en">
+<nav class="flex items-center justify-between">
+    <a href="/">KŌMAKI</a>
 
-<head>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body>
-
-    @yield('content')
-
-</body>
-
-</html>
+    <div class="hidden lg:flex gap-6">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
 ```
+
+The component can then be included in a page:
+
+```blade
+<x-navbar />
+```
+
+This modular approach helps keep the main page cleaner and easier to maintain.
 
 ---
 
 # 7. User Interface Design
 
+The KŌMAKI Product Landing Page uses a Japanese-inspired modern interface.
+
+The design focuses on visual consistency, readability, contrast, and clear interaction.
+
 ## Color Palette
 
-The KŌMAKI website uses a dark Japanese-inspired visual style.
+The website uses a limited and harmonious color palette.
 
 The primary colors include:
 
-- Dark background colors
+- Dark backgrounds
 - Red accent colors
-- White text
+- White primary text
 - Gray secondary text
 
-The red accent color helps emphasize:
+The dark background creates an elegant and premium appearance.
+
+Red is used as an accent color to draw attention to:
 
 - Buttons
 - Interactive elements
 - Important information
-- Brand identity
+- Brand-related elements
 
-The limited color palette creates a consistent and professional appearance.
-
----
+Using a limited color palette helps maintain consistency and prevents the interface from appearing visually overwhelming.
 
 ## Typography
 
-Typography is used to create visual hierarchy.
+Typography is used to create visual hierarchy and improve readability.
 
-Different font sizes and weights help distinguish:
+Different font sizes and font weights help distinguish between:
 
 - Main headings
 - Section headings
-- Paragraphs
+- Body text
 - Navigation links
 - Buttons
 
-Large headings attract attention, while smaller text provides supporting information.
+Large and bold headings attract the user's attention, while smaller text provides supporting information.
 
----
+Consistent typography helps users understand the relationship between different sections of the page.
 
 ## Iconography
 
-Simple icons are used to support navigation and interaction.
+Icons are used to support interaction and navigation.
 
-For mobile devices, a menu icon can be used to provide access to navigation links without occupying too much screen space.
+For example, mobile navigation may use a menu icon to provide access to navigation links without taking up too much screen space.
 
-Icons should remain simple and recognizable to improve usability.
+Effective iconography should be:
 
----
+- Simple
+- Recognizable
+- Consistent
+- Easy to understand
+
+Using familiar icons improves usability and helps users understand available interactions.
 
 ## Button Styles
 
-Buttons use:
+Buttons use a consistent visual style throughout the interface.
 
-- Rounded corners
-- Red accent colors
-- Clear text
-- Hover effects
-- Consistent spacing
+The button design includes:
+
+- Red accent colors.
+- Clear text.
+- Adequate padding.
+- Rounded corners.
+- Hover effects.
+- Smooth transitions.
 
 Example:
 
 ```html
-<a class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full">
+<a class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full transition">
     Explore Menu
 </a>
 ```
 
-Consistent button styling helps users recognize interactive elements.
-
----
+Consistent button styling makes interactive elements easy to recognize.
 
 ## Card Design
 
-Cards can be used to organize:
+Cards are useful for organizing content into visually separate sections.
 
+For a product landing page, cards can be used to present:
+
+- Featured products
 - Menu items
-- Food selections
 - Features
-- Other content
+- Testimonials
+- Pricing options
 
-Cards help separate information visually and improve readability.
+A good card design usually includes:
 
-Consistent spacing, rounded corners, and imagery help create a clean interface.
+- Clear spacing.
+- Consistent padding.
+- Rounded corners.
+- Images or icons.
+- Readable typography.
 
----
+Cards help users scan and understand information more easily.
 
 ## Layout Consistency
 
-The project maintains consistency through:
+Layout consistency is maintained through the repeated use of:
 
-- Repeated spacing patterns
-- Consistent typography
-- Similar button styles
-- Harmonious colors
-- Consistent section structure
+- Consistent spacing.
+- Similar typography.
+- Repeated button styles.
+- Harmonious colors.
+- Organized content sections.
+- Consistent alignment.
 
-Layout consistency improves the user experience because users can understand and navigate the interface more easily.
+Consistency improves the user experience because users become familiar with how the interface works as they navigate through the page.
 
 ---
 
 # 8. Folder Structure
 
-The following folders help organize the Laravel project.
+The project uses an organized folder structure to separate views, components, assets, and documentation.
 
 ```text
 week05-product-landing-page/
@@ -503,165 +549,67 @@ week05-product-landing-page/
 
 ## resources/views/layouts
 
-This folder contains reusable page layouts.
+The `layouts` folder contains reusable page layouts.
 
 Layouts may contain common elements such as:
 
-- HTML structure
-- Head section
-- Navigation
-- Footer
-- Shared scripts
+- HTML document structure.
+- Head section.
+- Shared styles.
+- Navigation.
+- Footer.
+- Scripts.
 
----
+Using layouts prevents the need to repeat the same structure across multiple pages.
 
 ## resources/views/components
 
-This folder contains reusable Blade components.
+The `components` folder contains reusable Blade Components.
 
-Examples include:
+Examples may include:
 
-- Navigation bar
-- Buttons
-- Cards
-- Footer
+- Navigation bar.
+- Hero component.
+- Buttons.
+- Product cards.
+- Feature cards.
+- Footer.
 
-Reusable components help reduce duplicated code.
-
----
+Reusable components help reduce duplicated code and improve consistency.
 
 ## resources/views/pages
 
-This folder contains individual pages of the application.
+The `pages` folder contains the main pages of the application.
 
-For this project, the landing page can be organized inside this folder.
+For this project, the main KŌMAKI Product Landing Page can be stored and organized as a page within this folder.
 
----
+Separating pages from components makes the project structure easier to understand and maintain.
 
 ## public
 
-The `public` folder contains publicly accessible assets.
+The `public` folder contains publicly accessible files and assets.
 
 Examples include:
 
-- Images
-- Website assets
-- Compiled Vite files
+- Images.
+- Logos.
+- Food photography.
+- Public website assets.
+- Compiled Vite files.
 
----
+Files inside the `public` folder can be accessed by the browser.
 
 ## screenshots
 
-This folder contains screenshots of the project.
+The `screenshots` folder is intended to contain images that document different views and sections of the completed project.
 
-Required screenshots include:
-
-- Before Design
-- After Design
-- Desktop Layout
-- Tablet Layout
-- Mobile Layout
-- Navigation Bar
-- Hero Section
-- Features Section
-- Pricing Cards
-- Testimonials
-- Footer
-- VS Code Project Structure
-- Blade Components Folder
-- GitHub Repository
-
----
+These screenshots provide visual evidence of the responsive design and project implementation.
 
 ## documentation
 
-This folder contains documentation-related images.
+The `documentation` folder is intended to contain supporting documentation images.
 
-It includes the Before-and-After comparison images that demonstrate the evolution of the interface.
-
----
-
-# 9. Screenshots
-
-## Before Design
-
-Initial wireframe or early prototype of the landing page.
-
-![Before Design](documentation/before-design.png)
-
----
-
-## After Design
-
-Final polished version of the KŌMAKI landing page.
-
-![After Design](documentation/after-design.png)
-
----
-
-## Desktop View
-
-![Desktop View](screenshots/desktop-layout.png)
-
----
-
-## Tablet View
-
-![Tablet View](screenshots/tablet-layout.png)
-
----
-
-## Mobile View
-
-![Mobile View](screenshots/mobile-layout.png)
-
----
-
-## Navigation Bar
-
-![Navigation Bar](screenshots/navbar.png)
-
----
-
-## Hero Section
-
-![Hero Section](screenshots/hero-section.png)
-
----
-
-## Features Section
-
-![Features Section](screenshots/features-section.png)
-
----
-
-## Pricing Section
-
-![Pricing Section](screenshots/pricing-section.png)
-
----
-
-## Testimonials
-
-![Testimonials](screenshots/testimonials.png)
-
----
-
-## Footer
-
-![Footer](screenshots/footer.png)
-
----
-
-## Blade Components Folder
-
-![Blade Components Folder](screenshots/blade-components-folder.png)
-
----
-
-## GitHub Repository
-
-![GitHub Repository](screenshots/github-repository.png)
+For this project, it is used to store the Before-and-After comparison images that demonstrate how the interface developed from the initial prototype to the final polished design.
 
 ---
 
@@ -669,69 +617,73 @@ Final polished version of the KŌMAKI landing page.
 
 ## Before
 
-The initial version focused on creating the basic structure of the landing page.
+The initial version of the project focused on creating the basic structure of the Product Landing Page.
 
-The early design included:
+The early prototype included:
 
-- Basic layout
-- Initial content structure
-- Simple navigation
-- Initial section arrangement
+- A basic page layout.
+- Initial navigation.
+- Basic content structure.
+- Initial section arrangement.
+- Minimal styling.
 
-![Before Interface](documentation/before-design.png)
-
----
+The primary goal of the early design was to establish the structure and organization of the landing page before applying the final visual design.
 
 ## After
 
 The final version improved the interface through:
 
-- Improved visual hierarchy
-- Japanese-inspired branding
-- Improved typography
-- Consistent spacing
-- Responsive layouts
-- Improved navigation
-- Professional food imagery
-- Improved color consistency
-- Better usability across different screen sizes
+- A more polished Japanese-inspired visual design.
+- Improved visual hierarchy.
+- Consistent typography.
+- Improved spacing.
+- Responsive layouts.
+- Improved navigation.
+- Professional food imagery.
+- A harmonious dark and red color palette.
+- Better usability across different screen sizes.
 
-![After Interface](documentation/after-design.png)
+The final design provides a more visually engaging and user-friendly experience compared to the initial prototype.
 
-The final design provides a more polished and visually engaging user experience compared to the initial prototype.
+The Before-and-After comparison demonstrates the evolution of the interface from an early layout into a polished responsive Product Landing Page.
 
 ---
 
-# Design Requirements Applied
+# Design Principles Applied
 
-The following design principles were considered during development:
+The following design principles were considered during the development of the project:
 
-- Modern design system
-- Consistent spacing
-- Consistent typography
-- Limited color palette
-- Sufficient color contrast
-- Responsive layouts
-- Clear visual hierarchy
-- Accessible navigation
+- Follow a modern design system.
+- Maintain consistent spacing.
+- Maintain consistent typography.
+- Use a limited and harmonious color palette.
+- Ensure sufficient color contrast for readability.
+- Create clear visual hierarchy.
+- Develop responsive layouts.
+- Improve navigation and usability.
+- Avoid directly copying existing websites.
 
-The project was developed as an original interface inspired by modern Japanese restaurant design principles.
+The final interface was developed as an original implementation using Japanese-inspired visual design concepts.
 
 ---
 
 # Technologies Used
 
+The following technologies were used to develop the project:
+
 - Laravel
 - PHP
 - Blade Templates
 - Tailwind CSS
+- HTML
 - JavaScript
 - Vite
-- HTML
+- Git
+- GitHub
 
 ---
 
-# Installation
+# Installation and Setup
 
 ## Clone the Repository
 
@@ -739,44 +691,58 @@ The project was developed as an original interface inspired by modern Japanese r
 git clone https://github.com/marickosheiy/week05-product-landing-page.git
 ```
 
-## Navigate to the Project
+## Navigate to the Project Folder
 
 ```bash
 cd week05-product-landing-page
 ```
 
-## Install Dependencies
+## Install PHP Dependencies
 
 ```bash
 composer install
 ```
 
+## Install JavaScript Dependencies
+
 ```bash
 npm install
 ```
 
-## Run the Development Server
+## Start the Laravel Development Server
 
 ```bash
 php artisan serve
 ```
 
-## Run Vite
+## Start Vite
 
 ```bash
 npm run dev
+```
+
+After starting the Laravel server, open the project in a browser.
+
+```text
+http://127.0.0.1:8000
 ```
 
 ---
 
 # Author
 
-**Katrina Villacorta**
+**Maricko Sheiy L. Villacorta**
 
 Week 05 – Product Landing Page
 
 ---
 
-# GitHub Repository
+# Repository
 
-:contentReference[oaicite:0]{index=0}
+Repository Name:
+
+```text
+week05-product-landing-page
+```
+
+The repository is hosted publicly on GitHub.
