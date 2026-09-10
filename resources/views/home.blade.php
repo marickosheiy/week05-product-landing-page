@@ -246,18 +246,25 @@
 
 
                 <!-- LOGO -->
+            <a href="#home" class="flex items-center gap-3 group">
+
+                <img
+                    src="{{ asset('images/komaki.png') }}"
+                    alt="KŌMAKI Logo"
+                    class="w-12 h-12 object-contain"
+                >
 
                 <div>
-
-                    <h1 class="serif text-2xl tracking-[0.18em]">
+                    <h1 class="serif text-2xl tracking-[0.18em] leading-none">
                         KŌMAKI
                     </h1>
 
                     <p class="text-[9px] tracking-[0.35em] text-red-400 mt-1">
                         小牧
                     </p>
-
                 </div>
+
+            </a>
 
 
 
