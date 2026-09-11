@@ -596,7 +596,7 @@ The purpose of the early version was to establish the structure and content of t
 
 ### Before Design
 
-![Before Design](documentations/beforee.png)
+![Before Design](documentation/beforee.png)
 
 ---
 
@@ -620,7 +620,7 @@ Improvements include:
 
 ### After Design
 
-![After Design](documentations/after.png)
+![After Design](documentation/after.png)
 
 ---
 
@@ -634,7 +634,7 @@ Improvements include:
 
 ## Tablet View
 
-![Tablet Layout](screenshots/tablet.png)
+![Tablet Layout](screenshot/Tablet.jpg)
 
 ---
 
@@ -664,7 +664,7 @@ Improvements include:
 
 ## Pricing Cards
 
-![Pricing Cards](screenshots/pricing.png)
+![Pricing Cards](screenshot/pricing.png)
 
 ---
 
