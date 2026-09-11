@@ -634,7 +634,7 @@ Improvements include:
 
 ## Tablet View
 
-![Tablet Layout](screenshot/Tablet.jpg)
+![Tablet Layout](screenshots/Tablet.jpg)
 
 ---
 
