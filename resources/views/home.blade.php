@@ -1388,6 +1388,174 @@
 
 
     </section>
+    
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="bg-[#1c1c1c] px-6 py-20 sm:px-10 lg:px-20">
+
+    <div class="mx-auto max-w-6xl">
+
+        <!-- Section Heading -->
+        <div class="mb-14 text-center">
+
+    <p class="mb-4 text-xs font-bold uppercase tracking-[0.5em] text-red-400">
+        Guest Experiences
+    </p>
+
+    <h2 class="serif text-5xl font-normal leading-tight text-white sm:text-6xl lg:text-7xl">
+        What Our Guests Say
+    </h2>
+
+</div>
+
+
+        <!-- Testimonial Cards -->
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+
+
+            <!-- Testimonial 1 -->
+            <article class="rounded-lg bg-[#2a2a2a] p-5 transition duration-300 hover:-translate-y-1 hover:bg-[#303030]">
+
+                <div class="mb-4 flex items-start gap-3">
+
+                    <!-- Initial -->
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-500 text-sm font-semibold text-white">
+                        A
+                    </div>
+
+                    <!-- Author -->
+                    <div>
+
+                        <h3 class="text-sm font-semibold text-white">
+                            Akira Nitozaki
+                        </h3>
+
+                        <p class="text-xs text-gray-400">
+                            Food Enthusiast
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Stars -->
+                <div class="mb-3 text-sm tracking-wider text-red-400">
+                    ★★★★★
+                </div>
+
+
+                <!-- Review -->
+                <p class="text-sm leading-6 text-gray-300">
+                    “The atmosphere was elegant and relaxing, and every dish
+                    was beautifully prepared. The sushi was incredibly fresh
+                    and absolutely delicious.”
+                </p>
+
+            </article>
+
+
+
+            <!-- Testimonial 2 -->
+            <article class="rounded-lg bg-[#2a2a2a] p-5 transition duration-300 hover:-translate-y-1 hover:bg-[#303030]">
+
+                <div class="mb-4 flex items-start gap-3">
+
+                    <!-- Initial -->
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-500 text-sm font-semibold text-white">
+                        M
+                    </div>
+
+                    <!-- Author -->
+                    <div>
+
+                        <h3 class="text-sm font-semibold text-white">
+                            Mika Myoi
+                        </h3>
+
+                        <p class="text-xs text-gray-400">
+                            Regular Guest
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Stars -->
+                <div class="mb-3 text-sm tracking-wider text-red-400">
+                    ★★★★★
+                </div>
+
+
+                <!-- Review -->
+                <p class="text-sm leading-6 text-gray-300">
+                    “KŌMAKI offers an amazing balance between authentic
+                    Japanese flavors and a modern dining experience.”
+                </p>
+
+            </article>
+
+
+
+            <!-- Testimonial 3 -->
+            <article class="rounded-lg bg-[#2a2a2a] p-5 transition duration-300 hover:-translate-y-1 hover:bg-[#303030]">
+
+                <div class="mb-4 flex items-start gap-3">
+
+                    <!-- Initial -->
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-500 text-sm font-semibold text-white">
+                        K
+                    </div>
+
+                    <!-- Author -->
+                    <div>
+
+                        <h3 class="text-sm font-semibold text-white">
+                            Kenji Choi
+                        </h3>
+
+                        <p class="text-xs text-gray-400">
+                            Japanese Cuisine Lover
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Stars -->
+                <div class="mb-3 text-sm tracking-wider text-red-400">
+                    ★★★★★
+                </div>
+
+
+                <!-- Review -->
+                <p class="text-sm leading-6 text-gray-300">
+                    “From the presentation to the flavor, everything felt
+                    carefully crafted. Definitely a place worth coming back to.”
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- Button -->
+        <div class="mt-8 text-center">
+
+            <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-md bg-red-500 px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-red-600"
+            >
+                Read More Reviews
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
