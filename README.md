@@ -596,7 +596,7 @@ The purpose of the early version was to establish the structure and content of t
 
 ### Before Design
 
-![Before Design](screenshots/beforee.png)
+![Before Design](documentations/beforee.png)
 
 ---
 
@@ -620,7 +620,7 @@ Improvements include:
 
 ### After Design
 
-![After Design](screenshots/after.png)
+![After Design](documentations/after.png)
 
 ---
 
