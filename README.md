@@ -871,6 +871,20 @@ Week 05 — Product Landing Page Activity
 
 ![GitHub Repository](screenshots/git.png)
 
+---
+
+
+## Reflection
+
+This activity helped me better understand how responsive web design and modern frontend development work within a Laravel project. While developing the KŌMAKI Product Landing Page, I learned how to create a single interface that adapts to different screen sizes instead of designing separate versions for desktop, tablet, and mobile devices.
+
+Using Tailwind CSS, I gained experience with utility classes, responsive breakpoints, Flexbox, and CSS Grid to adjust layouts, spacing, typography, navigation, and content placement. This helped me understand that responsive design is not simply about making elements smaller, but about ensuring that the overall interface remains readable, visually balanced, and easy to use across different devices.
+
+I also gained experience working with Laravel Blade templates and organizing the project's interface into reusable and maintainable sections. This made the development process more structured and helped reduce unnecessary repetition in the code.
+
+The development of the KŌMAKI landing page also showed me the importance of iteration in UI design. Comparing the initial HTML layout with the final styled interface demonstrated how improvements in typography, color, spacing, responsiveness, and visual hierarchy can significantly improve the overall user experience.
+
+Overall, this activity helped me develop a better understanding of how Laravel, Tailwind CSS, Blade templates, and responsive design principles can work together to create a modern, organized, and user-friendly product landing page.
 
 
 
